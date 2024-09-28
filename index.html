@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abid Al Afzal - Clinical Psychologist</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Amasis MT Pro', serif;
+      background-color: #F5F5DC;
+      color: #2F2F2F;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #457B9D;
+      color: #FFFFFF;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-family: 'Careny', serif; /* Change font to Careny */
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    .cta-button {
+      background-color: #457B9D;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      background-color: #0056b3; /* Blue color for the button */
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('nature-bg.jpg'); /* Replace with your nature image */
+      background-size: cover;
+      background-position: center;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      color: #0056b3; /* Shine blue for the title text */
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin: 20px 0;
+      color: #0056b3; /* Shine blue for the paragraph text */
+    }
+
+    /* Services Section */
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+    }
+
+    .service-box {
+      background-color: #F0ECE3;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 22%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: scale(1.05);
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .about img {
+      border-radius: 50%;
+      width: 150px;
+      margin-right: 20px;
+    }
+
+    .about-text {
+      max-width: 600px;
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 10px; /* Square box with slightly rounded corners */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 3D effect for the about box */
+    }
+
+    /* Personal Background Section */
+    .background {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #E2F1F8;
+    }
+
+    .background-text {
+      max-width: 600px;
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 10px; /* Square box with slightly rounded corners */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 3D effect for the background box */
+    }
+
+    /* Psychological Disorders Section */
+    .disorders {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #FFFFFF;
+    }
+
+    .disorder-box {
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: #FFFFFF;
+      font-size: 1.2em;
+    }
+
+    /* Logo Design */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0056b3;
+      border-radius: 10px;
+      width: 150px;
+      height: 150px;
+      color: #FFFFFF;
+      font-family: 'Careny', serif;
+      font-size: 2em;
+      text-align: center;
+      margin: 20px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 40px 20px;
+      background-color: #E2F1F8;
+      text-align: center;
+    }
+
+    .testimonial-card {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      width: 80%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .contact button {
+      background-color: #0056b3; /* Blue color for the contact button */
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .contact button:hover {
+      background-color: #A8DADC;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #457B9D;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Abid Al Afzal</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#disorders">Disorders</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/8801763622444" class="cta-button">Book Appointment</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Professional Mental Health Services</h1>
+    <p>Helping You Achieve Mental Well-being with Evidence-based Counseling</p>
+    <a href="https://wa.me/8801763622444" class="cta-button">Book Appointment</a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="service-box" style="background-color: #F0ECE3;">
+      <h3>Individual Counseling</h3>
+      <p>One-on-one personalized sessions for emotional well-being.</p>
+    </div>
+    <div class="service-box" style="background-color: #E2F1F8;">
+      <h3>Couples Therapy</h3>
+      <p>Helping couples navigate relationships with effective communication techniques.</p>
+    </div>
+    <div class="service-box" style="background-color: #E6EFE9;">
+      <h3>Family Therapy</h3>
+      <p>Guiding families through conflicts and fostering positive relationships.</p>
+    </div>
+    <div class="service-box" style="background-color: #FDE9D9;">
+      <h3>Child Therapy</h3>
+      <p>Supporting children's emotional growth and mental health.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="logo-container">
+      AA
+    </div>
+    <img src="your-photo.jpg" alt="Abid Al Afzal"> <!-- Replace with your professional photo -->
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I am Abid Al Afzal, a licensed clinical psychologist with years of experience helping clients overcome mental health challenges. My approach is empathetic, evidence-based, and tailored to individual needs.</p>
+    </div>
+  </section>
+
+  <!-- Personal Background Section -->
+  <section class="background" id="background">
+    <div class="background-text">
+      <h2>Personal Background</h2>
+      <p>My journey as a clinical psychologist has been shaped by my education and hands-on experience. I am committed to continual learning and applying evidence-based practices to provide the best care for my clients.</p>
+    </div>
+  </section>
+
+  <!-- Psychological Disorders Section -->
+  <section class="disorders" id="disorders">
+    <div class="disorder-box" style="background-color: #F5A9A9;">Depression</div>
+    <div class="disorder-box" style="background-color: #F6BE00;">Anxiety</div>
+    <div class="disorder-box" style="background-color: #F6C3C3;">OCD</div>
+    <div class="disorder-box" style="background-color: #F5D0A9;">Premature Ejaculation</div>
+    <div class="disorder-box" style="background-color: #D4E6F1;">Phobia</div>
+    <div class="disorder-box" style="background-color: #FAD02E;">Stress</div>
+    <div class="disorder-box" style="background-color: #A3C1AD;">Bipolar Disorder</div>
+    <div class="disorder-box" style="background-color: #D5A6BD;">PTSD</div>
+    <div class="disorder-box" style="background-color: #A9DFBF;">ADHD</div>
+    <div class="disorder-box" style="background-color: #B9B9B9;">Eating Disorders</div>
+    <div class="disorder-box" style="background-color: #D5DBDB;">Insomnia</div>
+    <div class="disorder-box" style="background-color: #F5B7B1;">Borderline Personality Disorder</div>
+    <div class="disorder-box" style="background-color: #C2C2F0;">Schizophrenia</div>
+    <div class="disorder-box" style="background-color: #F7F9F9;">Grief</div>
+    <div class="disorder-box" style="background-color: #F5C6C6;">Substance Abuse</div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial-card">
+      <p>"Abid helped me through a very difficult time in my life. His sessions were a turning point in my journey to mental well-being." - Client A</p>
+    </div>
+    <div class="testimonial-card">
+      <p>"Thanks to Abid's counseling, my family is now stronger and more connected." - Client B</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>To book a session or inquire about my services, contact me directly:</p>
+    <button onclick="window.location.href='https://wa.me/8801763622444'">Book via WhatsApp</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Abid Al Afzal. All rights reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
